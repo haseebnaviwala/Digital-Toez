@@ -1,0 +1,90 @@
+.middlepart2main{
+    padding: 100px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cocogoose";
+    overflow-x: hidden;
+    width: 100%;
+    /* height: 100vh; */
+    background: url(./section-bg01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.middlepart2first{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.text4{
+    margin: 0px 0px;
+}
+
+.middlepart2first::before{
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #5513A0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: -15px 0px #5513A0;
+    margin-top: 2px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.middlepart2first::after{
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #5513A0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 15px 0px #5513A0;
+    margin-top: 2px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.middlepart2first:hover{
+    transform: scale(1.2) !important;
+    color: #5513A0;
+}
+
+.middlepart2first:hover::before{
+    opacity: 1;
+    transform: translateX(-15px);
+}
+
+.middlepart2first:hover::after{
+    opacity: 1;
+    transform: translateX(15px);
+}
+
+.middlepart2second{
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.middlepart2third{
+    font-size: 1em;
+    text-align: center;
+    color: rgb(181, 173, 173);
+}
